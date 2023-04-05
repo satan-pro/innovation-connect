@@ -7,6 +7,10 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+body{
+    background-color:#f8f0fc;
+}
+
 a {
     text-decoration: none;
 }
@@ -25,6 +29,7 @@ a:any-link {
     z-index: 100;
     box-shadow: 0 2px 10px rgba(82, 80, 80, 0.466);
     height: 50px;
+    background-color: white;
 }
 
 .logo {
@@ -96,4 +101,24 @@ a:any-link {
     outline: none;
     padding: 8px;
     font-size: 1rem;
+}
+
+.container {
+    padding: 20px 6%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.left-sidebar{
+    flex-basis: 25%;
+    background-color: #da77f2;
+}
+
+.right-sidebar{
+    flex-basis: 25%;
+}
+
+.main-content{
+    flex-basis: 47%;
 }
