@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #f3d9fa;
+}
+
+a:any-link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+section{
+    flex-basis: 50%;
+}
+
+.banner{
+    background-color: #ae3ec9;
+    margin-right: 30px;
+    box-shadow: 5px 0 5px 2px #adb5bd;
+    display: flex;
+    align-items: center;
+}
+
+.banner .text{
+    color: #f3f0ff;
+    font-size: 15vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 15px;
+    font-weight: 500;
+    text-shadow: 5px 5px 3px  #862e9c;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.logo{
+    display: block;
+    float: right;
+}
+
+.logo img{
+    width: 25vw;
+    height: 60px;
+}
+
+.form{
+    height: 300px;
+    width: 50%;
+    margin: 70px auto;
+    padding: 10px 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 5px 5px 10px 5px rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.form h2{
+    font-size: 2rem;
+    color: #862e9c;
+}
+
+.form input{
+    border: none;
+    border-bottom: 1px solid #adb5bd;;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem ;
+}
+
+.form .buttons
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.form .buttons button{
+    width: 80px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px;
+    color: #862e9c;
+    border: 2px solid #862e9c;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form .buttons button:hover, .forms .buttons button:focus{
+    background-color: #862e9c;
+    color: #f3f0ff;
+    transition: .3s;
+}
+
